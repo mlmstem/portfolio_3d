@@ -2,12 +2,13 @@ import { Tilt } from "react-tilt"
 import { motion} from "framer-motion"
 
 import {styles} from '../styles'
-import { github } from "../assets"
+import { github,Deployment } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+
+const ProjectCard = ({index, name, description, tags, image, source_code_link, additional_link, additional_line }) => {
   return (
     <motion.div variants={fadeIn ("up", "spring", index * 0.5, 0.75)}>
      <Tilt
@@ -26,15 +27,21 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
                   className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
                     <img src={github} alt="github" 
                     className="w-1/2 h-1/2 object-contain"/>
-
-
                   </div>
+            {additional_link &&  (<div onClick={() => window.open(additional_link, "_blank")}
+                        className="green-pink-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer">
+                          <img src={Deployment} alt="deployed" 
+                          className="w-1/2 h-1/2 object-contain"/>
+                        </div>) }
+
           </div>
 
         </div>
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
+
+          {additional_line && <p className="mt-2 text-red-500">{additional_line}</p>}
         </div>
 
         <div className="mt-4 flex flex-warp gap-2">

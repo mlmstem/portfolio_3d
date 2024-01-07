@@ -19,10 +19,23 @@ import {
     starbucks,
     tesla,
     shopify,
+    Unimelb,
     carrent,
     jobit,
     tripguide,
     threejs,
+    HKUST,
+    UCSD,
+    Farmbot,
+    Night,
+    TCP,
+    Camera,
+    Helmet,
+    Beer,
+    Adobe,
+    Angular,
+    Bootstrap,
+    Unity,
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +59,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Graphics/UI/UX Designer",
       icon: mobile,
     },
     {
@@ -54,7 +67,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Game Designer",
       icon: creator,
     },
   ];
@@ -73,20 +86,20 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Adobe XD",
+      icon: Adobe,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Angular",
+      icon: Angular,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "Bootstrap",
+      icon: Bootstrap,
     },
     {
       name: "Node JS",
@@ -105,8 +118,8 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Unity",
+      icon: Unity,
     },
     {
       name: "docker",
@@ -116,55 +129,54 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Majored in Computing and Software System",
+      company_name: "The University of Melbounre",
+      icon: Unimelb,
+      iconBg: "#fff",
+      date: "Bachelor of Design",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Learning technical skills such as Data structures and Alogrithms,Operating system and Computer Memory Management system.",
+        "Collaborating with teams of students developing group projects that statisfy high quality standard.",
+        "Solidfying programming lanaguage skills in Personal Projects and Group projects.",
+        "Participating in extracurricular activities that develop real-life skills outside of the coursework.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Data Structure Fundementals",
+      company_name: "UC San Diego",
+      icon: UCSD,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "EDX Online Certificates",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Accuqiring data structure and alogrithm knowledge such trees, graph, stacks, queues, priorities queue.",
+        "Applying data structure knowledge in field such as data processing, content structuring etc.",
+        "Practicing problem solving skills in analyzing the problems and apply data structure knowledge accordingly.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Front End Web UI Frameworks And Tools: Bootstrap4",
+      company_name: "Hong Kong University of Science and Technology",
+      icon: HKUST,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Coursera Online Certificates",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Formatting Web componenets using Bootstrap opertations",
+        "Applying Javascript expertise to elevate the interactive design.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Arranging UI componenets for the user interfaces to ensure good user experience.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Server-side Development with NodeJS Express and MongoDB",
+      company_name: "Hong Kong University of Science and Technology",
+      icon: HKUST,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Coursera Online Certificates",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Implementing server side Communication Using Node.js.",
+        "Configuring Rest API structures using Express.js for streamined server-client interactions",
+        "Learning server side communication and data authentication.",
+        "Arranging setup of NoSQL database structures on MongoDB.",
       ],
     },
   ];
@@ -198,67 +210,70 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Farmbot Web Application",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A 3D full-fledged Web application that allow users to plant and sow their own plants just like a 3d gardening game, The application is connected to MongoDB database which allow users to record the plant's data and monitering the plant's status. In addition, the app also runs data analysis for the users on their own plants. ",
       tags: [
         {
-          name: "react",
+          name: "MongoDB",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Unity(C#)",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Express",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: Farmbot,
+      source_code_link: "https://github.com/mlmstem/new_garden_01",
+      additional_link: "https://farmbot-simulator.onrender.com/", // Change to your additional link
+      additional_line: "The Deployment website for this project is using free services thus it will take 1-2 minutes for the website to load. Try to refresh the website when needed.",
     },
     {
-      name: "Job IT",
+      name: "Night in the wood",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A online 3D survival game that you have to survive in the forest for 5 minutes to win.For the entire duration, you will be losing hps, and you might be attacked by the enemies(animals). You have to use the items properly, find food (berries) and potentially using shelters so that you might survive till the ends. ",
       tags: [
         {
-          name: "react",
+          name: "Unity",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "C#",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "blender",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: Night,
+      source_code_link: "https://github.com/COMP30019/project-2-cvts?tab=readme-ov-file",
+      additional_link: "https://comp30019.github.io/project-2-cvts/", // Change to your additional link
     },
     {
-      name: "Trip Guide",
+      name: "Remote Procedural System Simulator",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This is a Remote Procedural System Mockup that Simulating the operations of the RPC that handling the requests from clients and the response from the servers. This systems allows simutanous connections from the clients, whenever there is an active request sent from the clients, the system will filter the request, and send the requests through the servers and eventually if the request is successfully, the system will process the response and send it back to the clients ",
       tags: [
         {
-          name: "nextjs",
+          name: "C Programming",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Web Architectures",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Socket programming",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: TCP,
+      source_code_link: "https://github.com/mlmstem/comp30023-ass2",
     },
   ];
   
